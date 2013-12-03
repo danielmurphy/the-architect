@@ -1,0 +1,19 @@
+body {
+  padding-top: 30px;
+}
+
+.output {
+  margin-bottom: 20px;
+}
+
+.output .button{
+  margin-bottom: 1px;
+}
+
+.inputs {
+  display: none;
+}
+
+.inputs .button {
+  margin-bottom: 1px;
+}
