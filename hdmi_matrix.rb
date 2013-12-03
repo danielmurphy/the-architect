@@ -2,13 +2,12 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 require './devices/hdx-404e'
 
-get '/hi' do
-  puts "hi"
-  "HELLO WORLD!"
+get '/' do
+  redirect '/index.html'
 end
 
 post '/' do
-  puts '/routes'
+  puts "Switching: "
   puts params.inspect
   matrix = Hdx404e.new.switch(params[:output], params[:input])
 end
