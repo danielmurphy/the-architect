@@ -12,7 +12,10 @@ class Hdx404e
 
   private
   def transmit(value)
-    serial_port.write value
+    3.times do
+      serial_port.write value
+      sleep 0.5
+    end
   end
 
   def serial_port
