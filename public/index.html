@@ -5,6 +5,7 @@
   <meta charset="utf-8" >
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Remote</title>
   <link rel="stylesheet" href="css/normalize.css" >
   <link rel="stylesheet" href="css/foundation.min.css" >
@@ -13,30 +14,32 @@
 
   <body>
     <div class="row">
-      <div class="small-1 columns"> </div>
-      <div class="small-10 columns">
+      <div class="small-11  small-centered columns content">
+        <div class="preset button expand" data-value="halo" >Halo</div>
+        <div class="preset button expand" data-value="presentation">Presentation</div>
+        <div class="preset button expand" data-value="tv">TV</div>
+
         <div class="output">
-          <a class="button expand secondary"><h3>Training Left</h3></a>
+          <a class="button expand secondary">Training Right</a>
           <div class="inputs" data-value="A">
             <a data-value="1" class="button expand">XBox 1</a>
             <a data-value="2" class="button expand">XBox 2</a>
-            <a data-value="3" class="button expand">PlayStation</a>
-            <a data-value="4" class="button expand">TV</a>
+            <a data-value="3" class="button expand">Apple TV</a>
+            <a data-value="4" class="button expand">DirecTV</a>
           </div>
         </div>
 
         <div class="output">
-          <a class="button expand secondary"><h3>Training Right</h3></a>
+          <a class="button expand secondary">Training Left</a>
           <div class="inputs" data-value="B">
             <a data-value="1" class="button expand">XBox 1</a>
             <a data-value="2" class="button expand">XBox 2</a>
-            <a data-value="3" class="button expand">PlayStation</a>
-            <a data-value="4" class="button expand">TV</a>
+            <a data-value="3" class="button expand">Apple TV</a>
+            <a data-value="4" class="button expand">DirecTV</a>
           </div>
         </div>
 
       </div>
-      <div class="small-1 columns"></div>
     </div>
 
     <script src="js/jquery.min.js"></script>

@@ -1,3 +1,4 @@
+
 $(document).on('ready', function(){
   $('.output .button').on('click', function(e){
     e.preventDefault()
@@ -10,7 +11,7 @@ $(document).on('ready', function(){
     output = $target.closest('.inputs').slideUp().data('value')
     input = $target.data('value')
     $.ajax({
-      url: 'http://hdmi.dev:4567',
+      url: '/',
       type: 'POST',
       data: {
         'output': output,
@@ -18,6 +19,18 @@ $(document).on('ready', function(){
       }
     });
   });
+
+  $('.preset.button').on('click', function(e){
+    preset = $(e.target).data('value');
+    $.ajax({
+      url: '/preset',
+      type: 'POST',
+      data: {
+        preset: preset
+      }
+    });
+  });
+
 });
 
 $(function() {
