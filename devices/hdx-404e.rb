@@ -1,7 +1,7 @@
 require 'serialport'
 
 class Hdx404e
-  def initialize(dev = "tty.usbserial-A700eWsE")
+  def initialize(dev = "ttyUSB0")
     @dev = dev
   end
 
